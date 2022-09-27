@@ -2,7 +2,9 @@ public class CreditPaymentService {
 
     public double calculate(int amount, double term) {
         double annualRate = 9.99;
-        double i = annualRate / 100 / term;
+
+        double i;
+        i= (annualRate / term) / 100;
 
         double monthlyPayment;
         double componentPayment = 1 + i;
